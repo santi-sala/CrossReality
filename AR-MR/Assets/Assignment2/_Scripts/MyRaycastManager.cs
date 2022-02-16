@@ -9,16 +9,17 @@ public class MyRaycastManager : MonoBehaviour
 {
     [SerializeField] private ARRaycastManager _aRRaycastManager;
     [SerializeField] private TMP_Text _uiText;
-    [SerializeField] private TMP_Text _markText;
+    [SerializeField] private TMP_Text _toSpawnObjectName;
     [SerializeField] private GameObject _hitMark;
     [SerializeField] private GameObject _spawnPivot;
 
     private bool _markActive = false;
-    [SerializeField] private GameObject _spawns;
+    private int _spawnsIndex = 0;
+    [SerializeField] private GameObject[] _spawns = new GameObject[3];
     // Start is called before the first frame update
     void Start()
     {
-        
+        InsertObjectName();
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class MyRaycastManager : MonoBehaviour
             _hitMark.SetActive(true);
             _uiText.text = hits[0].trackable.transform.ToString();
             _hitMark.transform.position = new Vector3(hits[0].trackable.transform.position.x, hits[0].trackable.transform.position.y, hits[0].trackable.transform.position.z);
-            _markText.text = _hitMark.transform.position.ToString();
+            //_toSpawnObjectName.text = _hitMark.transform.position.ToString();
             _markActive = true;
         }
         else
@@ -52,11 +53,50 @@ public class MyRaycastManager : MonoBehaviour
     {
         if (_markActive)
         {
-            Instantiate(_spawns, _hitMark.transform.position, _hitMark.transform.rotation, _spawnPivot.transform );
+            Instantiate(_spawns[_spawnsIndex], _hitMark.transform.position, _hitMark.transform.rotation, _spawnPivot.transform );
         }
         else
         {
             return;
         }
+    }
+
+    public void IncreaseIndex()
+    { 
+        _spawnsIndex++;
+
+        if (_spawnsIndex > _spawns.Length -1)
+        {
+            _spawnsIndex = 0;
+        }
+        InsertObjectName();
+    }
+
+    public void DecreaseIndex()
+    {
+        _spawnsIndex--;
+
+        if (_spawnsIndex < 0)
+        {
+            _spawnsIndex = _spawns.Length - 1;
+        }
+        InsertObjectName();
+    }
+
+    public void InsertObjectName()
+    {
+        switch (_spawnsIndex)
+        {
+            case 0:
+                _toSpawnObjectName.text = "Cube";
+                break;
+            case 1:
+                _toSpawnObjectName.text = "Sphere";
+                break;
+            case 2:
+                _toSpawnObjectName.text = "Capsule";
+                break;         
+        }
+
     }
 } 
