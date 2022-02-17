@@ -36,8 +36,8 @@ public class MyRaycastManager : MonoBehaviour
         {
             //_uiText.text = hits[0].sessionRelativeDistance.ToString();
             _hitMark.SetActive(true);
-            _uiText.text = hits[0].trackable.transform.ToString();
             _hitMark.transform.position = new Vector3(hits[0].trackable.transform.position.x, hits[0].trackable.transform.position.y, hits[0].trackable.transform.position.z);
+            _uiText.text = "Mark position is :" + _hitMark.transform.position.ToString();
             //_toSpawnObjectName.text = _hitMark.transform.position.ToString();
             _markActive = true;
         }
