@@ -283,7 +283,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 0
+  m_LightEstimation: -1
   m_FacingDirection: 1
 --- !u!114 &659301506
 MonoBehaviour:
@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 869178962}
   - component: {fileID: 869178963}
   - component: {fileID: 869178964}
+  - component: {fileID: 869178965}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -648,7 +649,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869178955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
@@ -656,6 +657,22 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 0d86dac513bf9f84f9ee3d131b01fb27, type: 2}
   m_MaxNumberOfMovingImages: 0
   m_TrackedImagePrefab: {fileID: 2826519162089565564, guid: 82f0ad091839dd14abc698925de28273, type: 3}
+--- !u!114 &869178965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869178955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutomaticPlacement: 1
+  m_EnvironmentTextureFilterMode: 2
+  m_EnvironmentTextureHDR: 1
+  m_DebugPrefab: {fileID: 1592164080931349349, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
 --- !u!1 &906971740
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,3 +965,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1084850114320900117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1592164080931349349, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_Name
+      value: pumpum
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 511.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 265.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000000007450581
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366795752214319059, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27fdaa3d9e6108a40b5e123ce5b7ff2b, type: 3}
