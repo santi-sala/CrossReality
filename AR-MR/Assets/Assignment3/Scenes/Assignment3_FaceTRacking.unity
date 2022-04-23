@@ -1997,6 +1997,18 @@ MonoBehaviour:
   - {fileID: 7345873513235792062, guid: cff6b06e7e91f03409ed09343a7cf87a, type: 3}
   - {fileID: 8371143838823512191, guid: a2f72be7395e0a84f88a98783212e181, type: 3}
   - {fileID: 4942880124455209605, guid: eb5718b4b21686342af53d68c8997bf6, type: 3}
+  - {fileID: 5059535921009212411, guid: 016e413b5f6b53742a1f753c16157474, type: 3}
+  _eyes:
+  - {fileID: 703121530532815249, guid: 10572a01338f40d44a890088cc2c8539, type: 3}
+  - {fileID: 5681713578998596801, guid: c6c78a9cd7b553e4d8bdebaf85af7994, type: 3}
+  - {fileID: 1566001595450199165, guid: 04d4fc5e80518fa4c825b239a609bbc9, type: 3}
+  _nose:
+  - {fileID: 4874012867310936987, guid: d925685241b4a6941a15f0e0f0a17b89, type: 3}
+  - {fileID: 8585097744020780083, guid: 48d0eb13d34da19419042152d0a8871e, type: 3}
+  _mustache:
+  - {fileID: 1819235874521557440, guid: 2a2ae1171bce568419dc6d65655d72dc, type: 3}
+  - {fileID: 4432272804830937770, guid: 6982bb5037235394c8415ee94d1730b6, type: 3}
+  - {fileID: 8094323393434572113, guid: ece57cfbf30c8ad47bbc25a233d4d81e, type: 3}
 --- !u!114 &1344966085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,10 +2720,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 42.05
+  m_fontSizeBase: 35
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
