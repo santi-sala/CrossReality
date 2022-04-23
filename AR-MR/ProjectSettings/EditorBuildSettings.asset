@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Assignment2/Scenes/Assignment2.unity
     guid: b9969745119b07848bff5c9210a5f8ae
   - enabled: 1
-    path: Assets/Assignment3/Scenes/Assignment3.unity
+    path: Assets/Assignment3/Scenes/Assignment3_FaceTRacking.unity
     guid: 8ed100e94aa8baf4ebf1073971f754a8
   - enabled: 0
     path: Assets/Scenes/Kpasa.unity
