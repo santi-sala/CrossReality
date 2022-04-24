@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Kpasa.unity
     guid: e35dbdba1a841894da382b690d6780ab
+  - enabled: 1
+    path: Assets/Assignment3/Scenes/Assignment3_Gallery.unity
+    guid: aaa20b70ab0adb642b73a3dbb87c5d18
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e9054ee600dc5b948927c37162eea18e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 26fab33ba8ed1ed4f957f8fc904ba3f1, type: 2}
