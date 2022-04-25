@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 2f89c30ceea74554bb50161f8584449e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Assignment2_SpawnObjects/Scenes/Assignment2.unity
     guid: b9969745119b07848bff5c9210a5f8ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Assignment3_FaceDetection/Scenes/Assignment3_FaceTracking.unity
     guid: 8ed100e94aa8baf4ebf1073971f754a8
   - enabled: 0
     path: Assets/Scenes/Kpasa.unity
     guid: e35dbdba1a841894da382b690d6780ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Assignment3_FaceDetection/Scenes/Assignment3_Gallery.unity
     guid: aaa20b70ab0adb642b73a3dbb87c5d18
   - enabled: 1
