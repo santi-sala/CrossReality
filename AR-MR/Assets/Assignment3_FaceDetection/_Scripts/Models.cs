@@ -37,6 +37,10 @@ public class Models : MonoBehaviour
     void Start()
     {        
         _selectedAccesory = Accesories.Hats;
+        DestroyCurrentAccesory("Hat");
+        DestroyCurrentAccesory("Eyes");
+        DestroyCurrentAccesory("Nose");
+        DestroyCurrentAccesory("Mustache");
     }
 
     public void GetSelectedItem(int index)
@@ -110,10 +114,21 @@ public class Models : MonoBehaviour
         StartCoroutine(WaitForAWhile());
 
     }
+
+
     private void DestroyCurrentAccesory(string accesory)
     {
         GameObject _currentAccesory = FindGameObjectInChildWithTag(_face, accesory);
-        Destroy(_currentAccesory);
+
+        if (_currentAccesory)
+        {
+            Destroy(_currentAccesory);
+        }
+        else
+        {
+            return;
+        }
+
     }
 
     private static GameObject FindGameObjectInChildWithTag(GameObject parent, string tag)
@@ -160,5 +175,6 @@ public class Models : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         _ArSession.enabled = true;
+
     }
 }
