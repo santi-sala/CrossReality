@@ -1,28 +1,39 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 
 public class TrackImage : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] _prefabsToBeSpawn;
+    [SerializeField]    
+    private GameObject _mainPanel;
+    //private bool _setCanvas = false;
 
+   
     private Dictionary<string, GameObject> _spawnedPrefabs = new Dictionary<string, GameObject>();
+    
     private ARTrackedImageManager _trackedImageManager;
 
     private void Awake()
     {
+        
         _trackedImageManager = FindObjectOfType<ARTrackedImageManager>();
 
-        foreach (GameObject prefab in _prefabsToBeSpawn)
+        foreach (GameObject prefabToBeSpawned in _prefabsToBeSpawn)
         {
-            GameObject newPrefab = Instantiate(prefab, Vector3.zero, Quaternion.identity);
-            newPrefab.name = prefab.name;
-            _spawnedPrefabs.Add(prefab.name, newPrefab);
+            GameObject newPrefab = Instantiate(prefabToBeSpawned, Vector3.zero, Quaternion.identity);
+            newPrefab.name = prefabToBeSpawned.name;
+            _spawnedPrefabs.Add(prefabToBeSpawned.name, newPrefab);
         }
     }
+
+    private void Start()
+    {        
+        _mainPanel.SetActive(false);
+    }
+
+
 
     private void OnEnable()
     {
@@ -44,11 +55,14 @@ public class TrackImage : MonoBehaviour
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
             UpdateImage(trackedImage);
+            _mainPanel.SetActive(false);
         }
 
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
             _spawnedPrefabs[trackedImage.name].SetActive(false);
+            //_canvas.enabled = false;
+            _mainPanel.SetActive(false);
         }
     }
 
@@ -60,6 +74,8 @@ public class TrackImage : MonoBehaviour
         GameObject prefab = _spawnedPrefabs[imageName];
         prefab.transform.position = imagePosition;
         prefab.SetActive(true);
+        //_canvas.enabled = true;
+        _mainPanel.SetActive(true);
 
         foreach (GameObject go in _spawnedPrefabs.Values)
         {
