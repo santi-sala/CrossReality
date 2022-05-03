@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4682760393691964}
   - component: {fileID: 8869940821398010349}
   m_Layer: 0
-  m_Name: ImmersalARCloudSDK
+  m_Name: ImmersalSDK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,5 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc609bf82f8e346d593bc1a41c2b7cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  developerToken: 
+  developerToken: e9689bd29fea32da2eabaf2bcbaf875d943ca42fdb35f1ba3cdcf0857f8f4943
   m_TargetFrameRate: 60
+  m_AndroidResolution: 2
+  m_iOSResolution: 0
+  m_Downsample: 1
+  onPoseLost:
+    m_PersistentCalls:
+      m_Calls: []
+  onPoseFound:
+    m_PersistentCalls:
+      m_Calls: []
+  secondsToDecayPose: 10
