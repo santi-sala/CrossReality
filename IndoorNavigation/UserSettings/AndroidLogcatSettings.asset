@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "aca3fac9",
         "name": "com.DefaultCompany.IndoorNavigation",
-        "processId": 6885,
+        "processId": 15930,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,18 @@
             "deviceId": "aca3fac9",
             "name": "com.DefaultCompany.IndoorNavigation",
             "processId": 6885,
+            "exited": false
+        },
+        {
+            "deviceId": "aca3fac9",
+            "name": "com.DefaultCompany.IndoorNavigation",
+            "processId": 10413,
+            "exited": false
+        },
+        {
+            "deviceId": "aca3fac9",
+            "name": "com.DefaultCompany.IndoorNavigation",
+            "processId": 15930,
             "exited": false
         }
     ],

@@ -24,11 +24,11 @@ public class QrCodeRecenter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SetQrCodeRecenterTarget("Esport");
-            Debug.Log("Space preseed!!");           
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    SetQrCodeRecenterTarget("Esport");
+        //    Debug.Log("Space preseed!!");           
+        //}
     }
 
     private void OnEnable()
