@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 143bd61cfa3961e45a104bdec21bcbcf, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &9462111
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &187999768
+--- !u!43 &269078349
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -613,6 +613,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 47b37d916c0d14048901b0446f8bcc6d, type: 3}
   m_PrefabInstance: {fileID: 497820109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &537030860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537030861}
+  m_Layer: 0
+  m_Name: Generate Nav Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &537030861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537030860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03835036, y: -0.41157708, z: 2.3721597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &708539521
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +727,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708539521}
-  m_Mesh: {fileID: 187999768}
+  m_Mesh: {fileID: 269078349}
 --- !u!114 &708539525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,14 +747,14 @@ MonoBehaviour:
   m_MapName: Testing1
   privacy: 0
   mapAlignment:
-    tx: 2681846.5
-    ty: 1294099.75
-    tz: 5621576
-    qx: -0.6297399997711182
-    qy: -0.3545093536376953
-    qz: 0.5437799096107483
-    qw: 0.42667797207832336
-    scale: 0.1486581265926361
+    tx: 2681846.38871887
+    ty: 1294099.8123520387
+    tz: 5621576.185253518
+    qx: -0.6297399978865299
+    qy: -0.35450934798388795
+    qz: 0.5437798823615909
+    qw: 0.4266779778623761
+    scale: 0.14865812521690283
   wgs84:
     latitude: 62.24871112903222
     longitude: 25.759195535483883
