@@ -47,7 +47,13 @@ public class SetNavigationTarget : MonoBehaviour
     {
         _targetPosition = Vector3.zero;
         string _selectedText = _navigationTargetDropdown.options[selectedValue].text;
+
+        Debug.Log("Selected Target is: " + _selectedText);
+
         Target _currentTarget = _navigationTargetObjects.Find(selectedTarget => selectedTarget.Name.Equals(_selectedText));
+
+        Debug.Log("Curent target is: " + _currentTarget.Name);
+
         if (_currentTarget != null)
         {
             _targetPosition = _currentTarget.PositionObject.transform.position;
@@ -58,5 +64,7 @@ public class SetNavigationTarget : MonoBehaviour
     {
         _lineToggle = !_lineToggle;
         _lineRenderer.enabled = _lineToggle;
+
+        Debug.Log("Line renderer should in appear: " + _lineToggle);
     }
 }

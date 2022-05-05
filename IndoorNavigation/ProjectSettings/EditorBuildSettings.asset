@@ -6,8 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: 95978c20af369a4488235f70d33a2635
+  - enabled: 1
+    path: Assets/Scenes/Immersal.unity
+    guid: b6a61983dfce75c4f97cab28bf516352
+  - enabled: 1
+    path: Assets/Scenes/ArCore.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/PlayingWimmersal/Scenes/PlayingWithImmersal.unity
+    guid: a36d1febc91ccd242add2b7f166c2533
+  - enabled: 0
+    path: Assets/ImmersalSDK/Samples/Scenes/NavigationSampleNavMesh.unity
+    guid: 98454a452db26144ca9d0692e148ed12
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f40d9732a066ab447bc2d4ff33dd4052, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7b3218bf526a6a146a43938214498c07, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9bceb8deb33f6a44aa0fdab4dc3b455c, type: 2}
