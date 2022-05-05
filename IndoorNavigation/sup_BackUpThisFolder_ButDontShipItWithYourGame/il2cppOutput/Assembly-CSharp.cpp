@@ -1043,7 +1043,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral50A70DC643B559C9B9B62EAA9B0808910BEEA158
 IL2CPP_EXTERN_C String_t* _stringLiteral517C1E9240257ADB3B22BB9D500C1A9DA0CF2A66;
 IL2CPP_EXTERN_C String_t* _stringLiteral54C963C9505198D802356F4E03EFC0C7FB434490;
 IL2CPP_EXTERN_C String_t* _stringLiteral559D1D796B138B4CA43D0984D285837AEF4CF455;
-IL2CPP_EXTERN_C String_t* _stringLiteral5B85DC70DE878A09F56AD1856005B9E9B393963A;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D6FC1D8584FA81A453F1DB5AD049BA64C621BE4;
 IL2CPP_EXTERN_C String_t* _stringLiteral5EB606E96542BB70C50DC9495A22F42269074505;
 IL2CPP_EXTERN_C String_t* _stringLiteral5F105F371FAE5DCFBDB81DA67A9AAD540A7E3EE4;
@@ -1091,7 +1090,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDAE6A63BDEEAAA47AA01F49BF5B60C4CE607615C
 IL2CPP_EXTERN_C String_t* _stringLiteralDB7A330309BFA84FB156E4FBA6A35A48D3B78C3A;
 IL2CPP_EXTERN_C String_t* _stringLiteralDCF53C16B2BF8C866847CF956416937C212CAF87;
 IL2CPP_EXTERN_C String_t* _stringLiteralDFDC0AEF1EE89120E0AA47F9E6211B3E5BAA8353;
-IL2CPP_EXTERN_C String_t* _stringLiteralE33C7018261DB8A6E454AD3F1D195F3455D93230;
 IL2CPP_EXTERN_C String_t* _stringLiteralE5BB03DF983B129193538D1549F7A76DD750B038;
 IL2CPP_EXTERN_C String_t* _stringLiteralE5E0786901C75E90A4BABEF0921E46E1D386CB5D;
 IL2CPP_EXTERN_C String_t* _stringLiteralE65666B0EEB5B3B734D386060256DDE454D63BAF;
@@ -9384,8 +9382,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Result_get_Text_m65A52D001505F5311D513F3CDD86D3BB72103E89_inline (Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF* __this, const RuntimeMethod* method) ;
 // System.Void ZXing.BarcodeReader::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarcodeReader__ctor_mCD1732A2FA39D8C385CDCDEF5348B60F02E7E30D (BarcodeReader_t3750E77E97439AA095CFBB5FD3B791E4349885DB* __this, const RuntimeMethod* method) ;
-// System.Void QrCodeRecenter::SetQrCodeRecenterTarget(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QrCodeRecenter_SetQrCodeRecenterTarget_m463B72B4D4C980733F169BBFF1B1D7E9E8A873DD (QrCodeRecenter_t48659C9EF1C81DDBDB76ECBB3F4181E7C175D365* __this, String_t* ____targetText0, const RuntimeMethod* method) ;
 // System.Void System.Action`1<UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs>::.ctor(System.Object,System.IntPtr)
 inline void Action_1__ctor_mDFD48034EFC4DF74EEB44B18C74DD7BAF391814E (Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -9449,6 +9445,8 @@ inline void NativeArray_1_Dispose_m8B0F342847ECB90EB814E1F6AA5BF7DC2F271AEA (Nat
 {
 	((  void (*) (NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF*, const RuntimeMethod*))NativeArray_1_Dispose_m8B0F342847ECB90EB814E1F6AA5BF7DC2F271AEA_gshared)(__this, method);
 }
+// System.Void QrCodeRecenter::SetQrCodeRecenterTarget(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QrCodeRecenter_SetQrCodeRecenterTarget_m463B72B4D4C980733F169BBFF1B1D7E9E8A873DD (QrCodeRecenter_t48659C9EF1C81DDBDB76ECBB3F4181E7C175D365* __this, String_t* ____targetText0, const RuntimeMethod* method) ;
 // System.Void QrCodeRecenter/<>c__DisplayClass10_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m98F4143DFD48809124764F77F87670308B42A42D (U3CU3Ec__DisplayClass10_0_t15FDD13257A03AE3C229ABF24885852FB1B82491* __this, const RuntimeMethod* method) ;
 // System.Void System.Predicate`1<Target>::.ctor(System.Object,System.IntPtr)
@@ -12748,32 +12746,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetImageAlternative__ctor_m6ADE9089C9D89
 // System.Void QrCodeRecenter::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QrCodeRecenter_Update_m7F9B83D4B85EDBF9622187A7FBBD16C8F552BD21 (QrCodeRecenter_t48659C9EF1C81DDBDB76ECBB3F4181E7C175D365* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5B85DC70DE878A09F56AD1856005B9E9B393963A);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE33C7018261DB8A6E454AD3F1D195F3455D93230);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (Input.GetKeyDown(KeyCode.Space))
-		bool L_0;
-		L_0 = Input_GetKeyDown_m0D59B7EBC3A782C9FBBF107FBCD4B72B38D993B3(((int32_t)32), NULL);
-		if (!L_0)
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		// SetQrCodeRecenterTarget("Esport");
-		QrCodeRecenter_SetQrCodeRecenterTarget_m463B72B4D4C980733F169BBFF1B1D7E9E8A873DD(__this, _stringLiteral5B85DC70DE878A09F56AD1856005B9E9B393963A, NULL);
-		// Debug.Log("Space preseed!!");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralE33C7018261DB8A6E454AD3F1D195F3455D93230, NULL);
-	}
-
-IL_001e:
 	{
 		// }
 		return;
